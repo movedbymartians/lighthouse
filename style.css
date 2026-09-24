@@ -1,0 +1,87 @@
+:root {
+  --ink: #e8e4d9;
+  --ink-dim: #9aa4ab;
+  --sea: #0c1418;
+  --lamp: #f2c14e;
+  --panel: #131f25;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 1rem;
+  background: radial-gradient(circle at 50% 0%, #1a2a32 0%, var(--sea) 70%);
+  color: var(--ink);
+  font: 16px/1.6 Georgia, "Iowan Old Style", serif;
+}
+
+.frame {
+  width: 100%;
+  max-width: 34rem;
+  padding: 2rem 2.25rem 1.75rem;
+  background: var(--panel);
+  border: 1px solid #2b3c45;
+  border-radius: 4px;
+  box-shadow: 0 0 0 1px #0a1216, 0 1.5rem 3rem rgba(0, 0, 0, 0.45);
+}
+
+h1 {
+  margin: 0 0 0.75rem;
+  font-size: 1.6rem;
+  font-weight: normal;
+  letter-spacing: 0.06em;
+  color: var(--lamp);
+}
+
+#room-description {
+  margin: 0 0 1.5rem;
+}
+
+.exits {
+  padding-top: 1.25rem;
+  border-top: 1px solid #2b3c45;
+}
+
+.exits h2 {
+  margin: 0 0 0.5rem;
+  font-size: 0.75rem;
+  font-weight: normal;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--ink-dim);
+}
+
+#exit-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#exit-list li {
+  padding: 0.15rem 0;
+}
+
+#exit-list .direction {
+  display: inline-block;
+  min-width: 4.5rem;
+  color: var(--lamp);
+}
+
+.message {
+  min-height: 1.6em;
+  margin: 1.25rem 0 0;
+  color: #e79d7a;
+  font-style: italic;
+}
+
+.hint {
+  margin: 1.5rem 0 0;
+  font-size: 0.8rem;
+  letter-spacing: 0.08em;
+  color: var(--ink-dim);
+}

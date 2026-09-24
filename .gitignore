@@ -1,0 +1,11 @@
+node_modules/
+dist/
+
+# Compiled output from tsc
+game.js
+game.js.map
+
+.DS_Store
+
+# Machine-local Claude Code settings
+.claude/settings.local.json
